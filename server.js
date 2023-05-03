@@ -1,10 +1,8 @@
 const express = require("express");
-const fs = require("fs");
 const app = express();
-const path = require("path");
-const PORT = process.env.PORT || 3001
-const apiRoutes = require('./routes/api')
-const htmlRoutes = require('./routes/html')
+const PORT = process.env.PORT || 3001;
+const apiRoutes = require("./routes/api.js");
+const htmlRoutes = require("./routes/html.js");
 
 app.use(express.static("public"));
 app.use(express.json());
